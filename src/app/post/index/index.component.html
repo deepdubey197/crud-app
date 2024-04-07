@@ -1,0 +1,28 @@
+<div class="container">
+    <h1 class="text-center">CRUD Application</h1>
+    <a href="#" routerLink="/post/create/" class="btn btn-success">Add Item</a>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Id:</th>
+                <th>Item Name:</th>
+                <th>Description:</th>
+                <th width="250px">Action:</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let post of posts">
+                <td>{{post.id}}</td>
+                <td>{{post.title}}</td>
+                <td>{{post.body}}</td>
+                <td>
+                    <a href="#" [routerLink]="['/post/',post.id,'view']" class="btn btn-info">View</a>
+                    <a href="#" [routerLink]="['/post/',post.id,'edit']" class="btn btn-info">Edit</a>
+                    <button class="btn btn-danger" type="button" (click)="deletePost(post.id)">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- Scroll Down Button -->
+    <button class="scroll-down-btn" (click)="scrollToBottom()">Click To View<br/>Your Added Item</button>
+</div>

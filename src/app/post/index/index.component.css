@@ -1,0 +1,71 @@
+/* Style the container */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Style the table */
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  /* Style the table headers */
+  .table th {
+    background-color: #f2f2f2;
+    text-align: left;
+    padding: 12px;
+  }
+  
+  /* Style the table rows */
+  .table td {
+    border-bottom: 1px solid #ddd;
+    padding: 12px;
+  }
+  
+  /* Style the action buttons */
+  .btn {
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    gap: 10px;
+  }
+  
+  .btn-success {
+    background-color: #28a745;
+    color: #fff;
+  }
+  
+  .btn-info {
+    background-color: #17a2b8;
+    color: #fff;
+  }
+  
+  .btn-danger {
+    background-color: #dc3545;
+    color: #fff;
+  }
+  
+  .btn:hover {
+    opacity: 0.8;
+  }
+  
+
+  .scroll-down-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .scroll-down-btn:hover {
+    background-color: #0056b3;
+  }
+  
